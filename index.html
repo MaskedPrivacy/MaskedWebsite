@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Masked Privacy (MASK)</title>
+    <link rel='dns-prefetch' href='http://fonts.googleapis.com' />
+    <link rel='dns-prefetch' href='http://s.w.org' />
+    <meta content="Divi v.4.3.2" name="generator" />
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='wp-block-library-css' href='../static/assets/css/dist/block-library/style.min_ver=5.4.2.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='divi-fonts-css' href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,latin-ext' type='text/css' media='all' />
+    <link rel='stylesheet' id='divi-style-css' href='../static/assets-co/style_ver=4.3.2.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='et-builder-googlefonts-cached-css' href='http://fonts.googleapis.com/css?family=Titillium+Web%3A200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C900%7CSource+Sans+Pro%3A200%2C200italic%2C300%2C300italic%2Cregular%2Citalic%2C600%2C600italic%2C700%2C700italic%2C900%2C900italic%7CCabin%3Aregular%2Citalic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%7CRoboto%3A100%2C100italic%2C300%2C300italic%2Cregular%2Citalic%2C500%2C500italic%2C700%2C700italic%2C900%2C900italic&amp;ver=5.4.2#038;subset=latin,latin-ext' type='text/css' media='all' />
+    <link rel='stylesheet' id='dashicons-css' href='../static/assets/css/dashicons.min_ver=5.4.2.css' type='text/css' media='all' />
+    <script type='text/javascript' src='../static/assets-co/jquery/jquery_ver=1.12.4-wp.js'></script>
+    <script type='text/javascript' src='../static/assets-co/jquery/jquery-migrate.min_ver=1.4.1.js'></script>
+
+
+    <link rel='https://api.w.org/' href='json/index.json' />
+    <meta name="generator" content="WordPress 5.4.2" />
+    <link rel="canonical" href="index.html" />
+    <link rel='shortlink' href='index.html' />
+    <link rel="alternate" type="text/xml+oembed" href="json/oembed/1.0/embed_url=http___dev4.wordpressexpert.pro_&amp;format=xml.xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" id="et-core-unified-2-cached-inline-styles" href="../static/assets-co/et-cache/2/et-core-unified-2-15923114407715.min.css" />
+
+</head>
+<body class="home page-template-default page page-id-2 et_pb_button_helper_class et_transparent_nav et_fullwidth_nav et_fixed_nav et_show_nav et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns4 et_cover_background et_pb_gutter osx et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db et_minified_js et_minified_css">
+
+
+    <div id="page-container">
+
+        <header id="main-header" data-height-onload="66">
+            <div class="container clearfix et_menu_container">
+                <div class="logo_container">
+                    <span class="logo_helper"></span>
+                    <a href="index.html"><img src="../static/assets-co/uploads/2021/01/mini_logo.png" alt="Masked Privacy Inc." id="logo" data-height-percentage="97" /></a>
+                </div>
+
+                <div id="et-top-navigation" data-height="66" data-fixed-height="40">
+                    <nav id="top-menu-nav">
+                        <ul id="top-menu" class="nav">
+                            <li id="menu-item-86" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-2 current_page_item menu-item-86"><a href="#" aria-current="page">Home</a></li>
+                            <li id="menu-item-87" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-87"><a href="/obfuscator/">Obfuscator</a></li>
+                            <li id="menu-item-90" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-90"><a href="https://github.com/MaskedPrivacy/MaskedPrivacy/blob/main/Whitepaper1.0.pdf" target="_blank">Whitepaper</a></li>
+                            <li id="menu-item-91" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-91"><a href="https://github.com/MaskedPrivacy/" target="_blank">Github</a></li>
+                            <li id="menu-item-92" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-92"><a href="/documentation/">Documentation</a></li>
+                            <li id="menu-item-93" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-93"><a href="/legal/">Legal</a></li>
+                            <li id="menu-item-93" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-93"><a href="/staking/">Staking</a></li>
+                        </ul>
+                    </nav>
+
+
+                    <div id="et_mobile_nav_menu">
+                        <div class="mobile_nav closed">
+                            <span class="select_page">Select Page</span>
+                            <span class="mobile_menu_bar mobile_menu_bar_toggle"></span>
+                        </div>
+                    </div>
+                </div> <!-- #et-top-navigation -->
+            </div> <!-- .container -->
+
+        </header> <!-- #main-header -->
+        <div id="et-main-area">
+
+            <div id="main-content">
+
+                <article id="post-2" class="post-2 page type-page status-publish hentry">
+
+
+                    <div class="entry-content">
+                        <!--- <div id="et-boc" class="et-boc"> <!--->
+
+                        <div class="et-l et-l--post">
+                            <div class="et_pb_section et_pb_section_0 et_pb_with_background et_pb_fullwidth_section et_section_regular" data-padding="|||">
+                                <div class="et_builder_inner_content et_pb_gutters3">
+
+                                    <section class="et_pb_module et_pb_fullwidth_header et_pb_fullwidth_header_0 et_animated et_hover_enabled et_pb_text_align_center et_pb_bg_layout_dark">
+
+
+                                        <div class="et_pb_fullwidth_header_container center">
+                                            <div class="header-content-container center">
+                                                <div class="header-content">
+
+                                                    <img src="../static/assets-co/uploads/2021/01/topLogo.png" width="400" height="400"/>
+
+                                                    <h1 class="et_pb_module_header">Masked Privacy</h1>
+
+                                                    <div class="et_pb_header_content_wrapper">
+                                                        <p>"For the people, made by the people. Stay private, stay strong, never surrender to surveilance."</p><hr /></br>
+                                                        <p><b>Update: You can now purchase MASKED directly from our new smart contract! Read the "How to get..." section to learn more.</b></p><br />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="et_pb_fullwidth_header_overlay"></div>
+
+                                    </section>
+                                </div> <!-- .et_pb_section -->
+
+                                <div class="et_pb_section et_pb_section_3 et_pb_with_background et_section_regular">
+
+                                    <div class="et_pb_row et_pb_row_3">
+                                        <div class="et_pb_column et_pb_column_4_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                                            <div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_center et_pb_bg_layout_dark">
+                                                <div class="et_pb_text_inner"><h2>What is Masked Privacy, and what is MASKED?</h2></div>
+                                            </div> <!-- .et_pb_text -->
+
+                                            <div class="et_pb_module et_pb_divider et_pb_divider_1 et_pb_divider_position_ et_pb_space">
+                                                <div class="et_pb_divider_internal"></div>
+                                            </div>
+
+                                            <div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_center et_pb_bg_layout_dark">
+
+                                                <div class="et_pb_text_inner"><p>The Masked Privacy Group is a small (but growing) team of digital privacy advocates. Big tech companies and malicious web services are constantly tracking, spying, and profiling unknowing individuals to deliver them personalized advertisements, and even report whether someone's a "suspicious or illegal" user via information sharing between companies. Similarily in blockchain tech and DeFi, there are bots, whale watchers, and potentially unwanted people tracking transactions of particular addresses. This can put a 'large-bag' holder feeling stuck or intimidated to make a move, as any transfers they do could ring alarm bells.</p> <br /><p> This is where MASKED comes in: An Ethereum solution for keeping transactions safe through obfuscation and creative coding. Through a variety of creative ideas and implementation, a perfect privacy token can be achieved. MASKED's contract auto-magically shows no holders, no transfer events, and obfuscated transfer data. The contract also allows users to "hide and unhide" their balance from any service or user that attempts to check that user's balance. Additionally, users can generate a non-changing hash value which can be used to 'confuse' the data shown in transfer Tx's on block explorers - creating a fully obfuscated transfer process. MASKED is essentially a private form of Ethereum.</p></div>
+                                            </div> <!-- .et_pb_text -->
+                                        </div> <!-- .et_pb_column -->
+
+
+                                    </div> <!-- .et_pb_row -->
+                                    <div class="et_pb_row et_pb_row_4">
+                                        <div class="et_pb_column et_pb_column_4_4 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                                            <div class="et_pb_module et_pb_image et_pb_image_1 et_animated et-waypoint">
+                                            </div>
+                                        </div> <!-- .et_pb_column -->
+                                    </div> <!-- .et_pb_row -->
+
+
+                                </div> <!-- .et_pb_section -->
+
+                                <div class="et_pb_section et_pb_section_3 et_pb_with_background et_section_regular">
+
+                                    <div class="et_pb_row et_pb_row_3">
+                                        <div class="et_pb_column et_pb_column_4_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                                            <div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_center et_pb_bg_layout_dark">
+                                                <div class="et_pb_text_inner"><h2>MASKED Token Information:</h2></div>
+                                            </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_divider et_pb_divider_1 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div>
+
+                                            <div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_center et_pb_bg_layout_dark">
+
+
+                                                <div class="et_pb_text_inner">
+                                                    <p>Contract Address: 0x6824822886c5c7e09451249e700980fb4cac256f</p> <br>
+                                                    <p><a href="https://etherscan.io/token/0x6824822886c5c7e09451249e700980fb4cac256f target="_blank">Etherscan link (Mainnet)</a></p><br>
+                                                    <p>Initial max supply: 10,000,000 MASKED</p> <br>
+                                                    <p>Burned tokens in Vault: 0 MASKED</p> <br>
+                                                    <p>Decimals: 18</p> <br>
+                                                    <p>Mintable: No</p> <br />
+                                                    <p>Burned tokens: 200,000</p> <br />
+                                                    <p>Holders: ?</p><br>
+                                                    <p>Initial Distribution wallet: 0x3eA5CA6a0443cB512aDe941E060CFE34284a22Cd</p>
+                                                </div>
+                                            </div> <!-- .et_pb_text -->
+                                        </div> <!-- .et_pb_column -->
+                                    </div> <!-- .et_pb_row -->
+
+                                </div>
+
+                                <div class="et_pb_section et_pb_section_3 et_pb_with_background et_section_regular">
+
+                                    <div class="et_pb_row et_pb_row_3">
+                                        <div class="et_pb_column et_pb_column_4_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+                                            <div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_center et_pb_bg_layout_dark">
+                                                <div class="et_pb_text_inner"><h2>How can I get MASKED tokens?</h2></div>
+                                            </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_divider et_pb_divider_1 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div>
+
+                                            <div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_center et_pb_bg_layout_dark">
+                                                <div class="et_pb_text_inner">
+                                                    <p>MASKED can be currently bought by sending Ether directly to the smart contract address <a href="https://etherscan.io/address/0x82d629256d1cb5b97583a985a89064d9630e0563" taget="_blank">0x82d629256d1cb5b97583a985a89064d9630e0563</a>. Your tokens will be sent to your wallet shortly after purchasing. The set price is currently 25,000 tokens per Ether, with the sale on-going until May 31 2021.</p><br />
+                                                    <p>After the initial sale is finished, staking Uniswap LP tokens will be implemented. Proceeds go towards providing liquidity to Uniswap along with expanding the team.</p>
+                                                </div>
+                                            </div> <!-- .et_pb_text -->
+                                        </div> <!-- .et_pb_column -->
+                                    </div> <!-- .et_pb_row -->
+
+                                </div>
+
+
+                                <div class="et_pb_section et_pb_section_3 et_pb_with_background et_section_regular">
+                                    
+                                    <div class="et_pb_row et_pb_row_3">
+                                        <div class="et_pb_column et_pb_column_4_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                                            <div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_center et_pb_bg_layout_dark">
+                                                <div class="et_pb_text_inner"><h2>Distribution Chart:</h2></div>
+                                            </div> <!-- .et_pb_text -->
+
+                                            <div class="et_pb_module et_pb_divider et_pb_divider_1 et_pb_divider_position_ et_pb_space">
+                                                <div class="et_pb_divider_internal"></div>
+                                            </div>
+
+                                            <div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_center et_pb_bg_layout_dark">
+
+                                                <div class="et_pb_text_inner">
+                                                    <img src="../static/assets-co/uploads/2021/03/dist.png" alt="Distribution Chart" /><hr />
+                                                    <p>The above allocation gives 500,000 tokens to both the team and for initial fundraising. Staking is given 2,000,000 tokens for rewards, while the remaining 7,000,000 are locked for future dApp development.</p>
+                                             
+                                                </div>
+
+                                            </div> <!-- .et_pb_text -->
+                                        </div> <!-- .et_pb_column -->
+
+
+                                    </div> <!-- .et_pb_row -->
+                                    <div class="et_pb_row et_pb_row_4">
+                                        <div class="et_pb_column et_pb_column_4_4 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough et-last-child">
+                                            <div class="et_pb_module et_pb_image et_pb_image_1 et_animated et-waypoint">
+                                            </div>
+                                        </div> <!-- .et_pb_column -->
+                                    </div> <!-- .et_pb_row -->
+
+
+                                </div> <!-- .et_pb_section -->
+
+
+                                <div class="et_pb_section et_pb_section_3 et_pb_with_background et_section_regular">
+
+
+                                    <div class="et_pb_section et_pb_section_3 et_pb_with_background et_section_regular">
+
+                                        <div class="et_pb_row et_pb_row_3">
+                                            <div class="et_pb_column et_pb_column_4_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                                                <div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_center et_pb_bg_layout_dark">
+                                                    <div class="et_pb_text_inner"><h2>Roadmap for 2021:</h2></div>
+                                                </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_divider et_pb_divider_1 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div>
+
+                                                <div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_center et_pb_bg_layout_dark">
+                                                    <!--  -->
+
+                                                    <div class="et_pb_text_inner">
+                                                        <img src="../static/assets-co/uploads/2021/01/roadmap.png" , alt="RoadMap2021" /><br />
+                                                        <p>We are currently started Q2 of our roadmap. This project is still very small in terms of members and holders, so we encourage all participants to help spread the word as it's beneficial for all parties (we may even reward you!).</p>
+                                                    </div>
+                                                </div> <!-- .et_pb_text -->
+                                            </div> <!-- .et_pb_column -->
+                                        </div> <!-- .et_pb_row -->
+
+                                    </div>
+
+                                    <div class="et_pb_section et_pb_section_3 et_pb_with_background et_section_regular">
+
+                                        <div class="et_pb_row et_pb_row_3">
+                                            <div class="et_pb_column et_pb_column_4_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                                                <div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_center et_pb_bg_layout_dark">
+                                                    <div class="et_pb_text_inner"><h2>Governance and Voting Rights</h2></div>
+                                                </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_divider et_pb_divider_1 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div>
+
+                                                <div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_center et_pb_bg_layout_dark">
+                                                    <!--  -->
+
+
+                                                    <div class="et_pb_text_inner">
+                                                        <p>MASKED tokens will be used in the future for decision-making via a voting mechanism. In-depth detail on how votes will be cast, weighted, and whether a user is allowed to vote multiple times is currently being decided. Contracts for voting will be carefully designed to suit our needs as they become apparent.</p><br />
+                                                        <p>Our governance system will also have a deflationary system built-in. As each vote costs a certain number of tokens, these are sent to a 'Burn Vault'. We can improve our eco-system by using the burn vault as a 'Rewards Vault' for future staking of tokens, thus the total supply will not go down as the burned (or rather, stuck within a contract) re-enter circulation via staked rewards.</p><br />
+                                                        <p>Voting will be used to gather opinions from holders about where the project should head, what apps should be built, along with team structural changes. Ideas that are brought for voting can be from either the development team or the community.</p>
+                                                    </div>
+                                                </div> <!-- .et_pb_text -->
+                                            </div> <!-- .et_pb_column -->
+                                        </div> <!-- .et_pb_row -->
+
+                                    </div>
+
+                                    <div class="et_pb_section et_pb_section_3 et_pb_with_background et_section_regular">
+
+                                        <div class="et_pb_row et_pb_row_3">
+                                            <div class="et_pb_column et_pb_column_4_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+                                                <div class="et_pb_module et_pb_text et_pb_text_2  et_pb_text_align_center et_pb_bg_layout_dark">
+                                                    <div class="et_pb_text_inner"><h2>Contract Extensions and 'Prophets'</h2></div>
+                                                </div> <!-- .et_pb_text --><div class="et_pb_module et_pb_divider et_pb_divider_1 et_pb_divider_position_ et_pb_space"><div class="et_pb_divider_internal"></div></div>
+
+                                                <div class="et_pb_module et_pb_text et_pb_text_3  et_pb_text_align_center et_pb_bg_layout_dark">
+                                                    <div class="et_pb_text_inner">
+                                                        <p>
+                                                            The MASKED token contract was built such that an 'Owner' can write new contracts that interact directly with MASKED. This provides scalability to the eco-system, for example: new privacy methods or other functions can be added as an Extension contract, then if users wish to interact with the extension contract with added functionalities they are free to do so.
+                                                        </p><br />
+                                                        <p>The concept of Extensions  on the contract can be tied in with our future goal of transferring off-chain data onto the chain. We've completed building desktop apps that can gather information then push it onto a new contract which tracks such data. This contract could of course be an extension, with variables related to the type of off-chain data you're pushing to the contract. More information regarding this section will be revealed past the 'launch' phase. </p>
+                                                    </div>
+                                                </div> <!-- .et_pb_text -->
+                                            </div> <!-- .et_pb_column -->
+                                        </div> <!-- .et_pb_row -->
+
+                                    </div>
+
+
+                                </div>
+
+
+
+                            </div> <!-- .et_pb_row -->
+
+
+
+                </article>
+            </div> <!-- .et_pb_section -->
+
+
+        </div> <!-- .et_pb_row -->
+
+
+    </div> <!-- .et_pb_section --><div class="et_pb_section et_pb_section_10 et_pb_with_background et_section_regular">
+
+
+
+
+                                      <div class="et_pb_row et_pb_row_18 et_pb_equal_columns">
+                                          <div class="et_pb_column et_pb_column_1_3 et_pb_column_34  et_pb_css_mix_blend_mode_passthrough">
+
+
+                                              <div class="et_pb_module et_pb_blurb et_pb_blurb_8  et_pb_text_align_left  et_pb_blurb_position_left et_pb_bg_layout_light">
+
+                                                  <!--  -->
+                                                  <div class="et_pb_blurb_content">
+
+                                                      <div class="et_pb_blurb_container">
+                                                          <h4 class="et_pb_module_header"><span>Contact</span></h4>
+                                                          <div class="et_pb_blurb_description"><p><span>MaskedPrivacy@protonmail.com</span></p><p><span><a href="https://discord.gg/SskB2vWqvv" target="_blank">Discord</a></span></p><p><span><a href="http://t.me/MaskedPrivacy" target="_blank">Telegram</a></span></p></div>
+                                                      </div>
+                                                  </div> <!-- .et_pb_blurb_content -->
+                                              </div> <!-- .et_pb_blurb -->
+                                          </div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_3 et_pb_column_35  et_pb_css_mix_blend_mode_passthrough">
+
+
+                                              <div class="et_pb_module et_pb_image et_pb_image_4">
+
+
+                                                  <span class="et_pb_image_wrap "><img src="../static/assets-co/uploads/2021/01/mini_logo.png" alt="MASK Logo" title="Mask"></span>
+                                              </div>
+                                          </div> <!-- .et_pb_column --><div class="et_pb_column et_pb_column_1_3 et_pb_column_36  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+                                              <ul class="et_pb_module et_pb_social_media_follow et_pb_social_media_follow_0 clearfix  et_pb_bg_layout_light">
+                                                 
+            <li class='et_pb_social_media_follow_network_0 et_pb_social_icon et_pb_social_network_link  et-social-facebook et_pb_social_media_follow_network_0'>
+                <a href='#'
+                   class='icon et_pb_with_border'
+                   title='Follow on Facebook'
+                   target="_blank">
+                    <span class='et_pb_social_media_follow_network_name'
+                          aria-hidden='true'>Follow</span>
+                </a>
+            </li> 
+                                                  <li class='et_pb_social_media_follow_network_1 et_pb_social_icon et_pb_social_network_link  et-social-twitter et_pb_social_media_follow_network_1'>
+                                                      <a href='https://twitter.com/MaskedPrivacy'
+                                                         class='icon et_pb_with_border'
+                                                         title='Follow on Twitter'
+                                                         target="_blank">
+                                                          <span class='et_pb_social_media_follow_network_name'
+                                                                aria-hidden='true'>Follow</span>
+                                                      </a>
+                                                  </li>
+                                                  <!--
+             <li class='et_pb_social_media_follow_network_4 et_pb_social_icon et_pb_social_network_link  et-social-linkedin et_pb_social_media_follow_network_4'>
+                 <a href='#'
+                    class='icon et_pb_with_border'
+                    title='Follow on LinkedIn'
+                    target="_blank">
+                     <span class='et_pb_social_media_follow_network_name'
+                           aria-hidden='true'>Follow</span>
+                 </a>
+             </li>
+             <li class='et_pb_social_media_follow_network_5 et_pb_social_icon et_pb_social_network_link  et-social-instagram et_pb_social_media_follow_network_5'>
+                 <a href='#'
+                    class='icon et_pb_with_border'
+                    title='Follow on Instagram'
+                    target="_blank">
+                     <span class='et_pb_social_media_follow_network_name'
+                           aria-hidden='true'>Follow</span>
+                 </a>
+             </li>
+            -->
+                                              </ul>
+
+                                          </div>
+                                          <!-- .et_pb_column --
+    -->
+                                    
+
+
+        </div> <!-- .et_pb_row -->
+
+
+    </div> <!-- .et_pb_section -->		
+
+
+
+    <footer id="main-footer">
+
+
+
+        <div id="footer-bottom">
+            <div class="container clearfix">
+                <div id="footer-info">Copyright Masked Privacy 2021</div>
+            </div>	<!-- .container -->
+        </div>
+    </footer> <!-- #main-footer -->
+
+
+
+    <script type='text/javascript' src='../static/assets-co/js/custom.js'></script>
+    <script type='text/javascript' src='../static/assets-co/js/custom.unified_ver=4.3.2.js'></script>
+    <script type="text/javascript">
+        var elems = document.getElementsByClassName('et_pb_newsletter_button et_pb_button');
+        var confirmIt = function (e) {
+            if (!confirm('You\'re now subscribed to our email updates!')) e.preventDefault();
+        };
+        for (var i = 0, l = elems.length; i < l; i++) {
+            elems[i].addEventListener('click', confirmIt, false);
+        }
+    </script>
+
+
+</body>
+</html>
